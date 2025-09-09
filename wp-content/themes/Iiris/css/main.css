@@ -1,0 +1,130 @@
+header{
+    background: #111;
+    width: 100%;
+    height: 100px;
+}
+
+.widget {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrap{
+    padding: 2rem 0;
+}
+header .top-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header .top-bar li a {
+    padding: .25rem 1rem;
+    color: #fff;
+}
+header .top-bar li {
+    position: relative;
+}
+
+header .top-bar li:first-child a {
+    padding-left: 0;
+}
+header .top-bar li:last-child a {
+    padding-right: 0;
+}
+header .top-bar li .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100px;
+    border-radius: .5rem;
+}
+header .top-bar li .sub-menu a{
+    color: green;
+    padding: .25rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+/*showing the blue color when mouse on the target of the menu*/
+header .top-bar li .sub-menu a:hover{
+    color: blue;
+}
+/*showing the sub menu when mouse on the menu*/
+header .top-bar > .menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+/*showing the third sub menu when mouse on the second sub menu*/
+header .top-bar .menu-item-has-children .sub-menu > .menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+/*second sub menu*/
+header .top-bar .sub-menu li .sub-menu {
+    top: 0;
+    left: 100%;
+}
+#equiry .form-group{
+    margin: 1rem;
+    padding: 1rem;
+}
+/* Enquiry form button styles. It's not worked. Because css couldn't set in the plugin
+.enquiry_form .gform_button{
+    width: 100% !important;
+    background: green !important;
+    color: #fff !important;
+    display: block !important;
+    border: 0 !important;
+}
+.enquiry_form .gform_footer{
+    margin: 0 !important;
+}
+/* This is for input of the size(email and phone)
+.enquiry_form input{
+    width: 100% !important;
+}
+/* Message of the size after click submit button
+.enquiry_form .gform_confirmation_message{
+    fontsize: 2rem;
+    text-align: center;    
+    line-height: 1.3rem;
+}
+/* This is for padding of the form
+.enquiry_form li.gfield {
+    padding-right: 0 !important;
+}  
+
+*/
+
+/* Remove list markers from all widgets and menus 
+.widget ul,
+.widget ol,
+.widget li,
+.widget li::marker,
+.menu,
+.menu ul,
+.menu ol,
+.menu li,
+.menu li::marker {
+    list-style: none !important;
+}
+
+.widget li::marker,
+.menu li::marker {
+    content: "" !important;
+    display: none !important;
+}
+    */
