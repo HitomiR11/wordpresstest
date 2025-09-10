@@ -1,3 +1,5 @@
+
+<!--page.php connected to other page.-->
 <?php get_header();?>
 
 <section class="page-wrap">
